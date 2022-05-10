@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/roone/projects/rsl/movie-api/app</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="_css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="_css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href="_css/style.css" rel="stylesheet" type="text/css">
+  <link href="_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.html">/home/roone/projects/rsl/movie-api/app</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Exceptions/Handler.php.html#28">App\Exceptions\Handler</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/BaseResponse.php.html#13">App\Http\BaseResponse</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/AuthController.php.html#19">App\Http\Controllers\Api\AuthController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/UserController.php.html#17">App\Http\Controllers\Api\UserController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#13">App\Http\Middleware\Authenticate</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#15">App\Http\Middleware\RedirectIfAuthenticated</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/TrustHosts.php.html#12">App\Http\Middleware\TrustHosts</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/RegisterUserRequest.php.html#16">App\Http\Requests\RegisterUserRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UserLoginRequest.php.html#15">App\Http\Requests\UserLoginRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Resources/UserResource.php.html#15">App\Http\Resources\UserResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/BroadcastServiceProvider.php.html#13">App\Providers\BroadcastServiceProvider</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/TelescopeServiceProvider.php.html#11">App\Providers\TelescopeServiceProvider</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/AppServiceProvider.php.html#12">App\Providers\AppServiceProvider</a></td><td class="text-right">33%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Exceptions/Handler.php.html#28">App\Exceptions\Handler</a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="Providers/TelescopeServiceProvider.php.html#11">App\Providers\TelescopeServiceProvider</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Http/BaseResponse.php.html#13">App\Http\BaseResponse</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Http/Controllers/Api/AuthController.php.html#19">App\Http\Controllers\Api\AuthController</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#15">App\Http\Middleware\RedirectIfAuthenticated</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#13">App\Http\Middleware\Authenticate</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Providers/AppServiceProvider.php.html#12">App\Providers\AppServiceProvider</a></td><td class="text-right">5</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Exceptions/Handler.php.html#68"><abbr title="App\Exceptions\Handler::render">render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exceptions/Handler.php.html#80"><abbr title="App\Exceptions\Handler::jsonResponse">jsonResponse</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exceptions/Handler.php.html#98"><abbr title="App\Exceptions\Handler::handleException">handleException</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/BaseResponse.php.html#24"><abbr title="App\Http\BaseResponse::respond">respond</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/BaseResponse.php.html#42"><abbr title="App\Http\BaseResponse::unauthorised">unauthorised</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/AuthController.php.html#28"><abbr title="App\Http\Controllers\Api\AuthController::register">register</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/AuthController.php.html#49"><abbr title="App\Http\Controllers\Api\AuthController::login">login</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/UserController.php.html#26"><abbr title="App\Http\Controllers\Api\UserController::me">me</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#22"><abbr title="App\Http\Middleware\Authenticate::redirectTo">redirectTo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#26"><abbr title="App\Http\Middleware\RedirectIfAuthenticated::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/TrustHosts.php.html#19"><abbr title="App\Http\Middleware\TrustHosts::hosts">hosts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/RegisterUserRequest.php.html#18"><abbr title="App\Http\Requests\RegisterUserRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/UserLoginRequest.php.html#17"><abbr title="App\Http\Requests\UserLoginRequest::rules">rules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Resources/UserResource.php.html#22"><abbr title="App\Http\Resources\UserResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/BroadcastServiceProvider.php.html#20"><abbr title="App\Providers\BroadcastServiceProvider::boot">boot</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/TelescopeServiceProvider.php.html#18"><abbr title="App\Providers\TelescopeServiceProvider::register">register</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/TelescopeServiceProvider.php.html#43"><abbr title="App\Providers\TelescopeServiceProvider::hideSensitiveRequestDetails">hideSensitiveRequestDetails</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/AppServiceProvider.php.html#19"><abbr title="App\Providers\AppServiceProvider::register">register</abbr></a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="Services/MovieService.php.html#139"><abbr title="App\Services\MovieService::decodeJson">decodeJson</abbr></a></td><td class="text-right">80%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Exceptions/Handler.php.html#98"><abbr title="App\Exceptions\Handler::handleException">handleException</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Providers/TelescopeServiceProvider.php.html#18"><abbr title="App\Providers\TelescopeServiceProvider::register">register</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#26"><abbr title="App\Http\Middleware\RedirectIfAuthenticated::handle">handle</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Http/BaseResponse.php.html#24"><abbr title="App\Http\BaseResponse::respond">respond</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/Api/AuthController.php.html#49"><abbr title="App\Http\Controllers\Api\AuthController::login">login</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Exceptions/Handler.php.html#80"><abbr title="App\Exceptions\Handler::jsonResponse">jsonResponse</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#22"><abbr title="App\Http\Middleware\Authenticate::redirectTo">redirectTo</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Providers/TelescopeServiceProvider.php.html#43"><abbr title="App\Providers\TelescopeServiceProvider::hideSensitiveRequestDetails">hideSensitiveRequestDetails</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Providers/AppServiceProvider.php.html#19"><abbr title="App\Providers\AppServiceProvider::register">register</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Services/MovieService.php.html#139"><abbr title="App\Services\MovieService::decodeJson">decodeJson</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 9.2.15</a> using <a href="https://secure.php.net/" target="_top">PHP 8.1.5</a> and <a href="https://phpunit.de/">PHPUnit 9.5.20</a> at Mon May 9 19:39:50 UTC 2022.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="_js/jquery.min.js" type="text/javascript"></script>
+  <script src="_js/d3.min.js" type="text/javascript"></script>
+  <script src="_js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([12,0,0,0,1,0,0,0,0,0,1,28], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([17,0,0,0,1,0,0,0,0,1,0,38], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[100,2,"<a href=\"Console\/Kernel.php.html#15\">App\\Console\\Kernel<\/a>"],[100,0,"<a href=\"Exceptions\/ExceptionTypeEnum.php.html#10\">App\\Exceptions\\ExceptionTypeEnum<\/a>"],[0,13,"<a href=\"Exceptions\/Handler.php.html#28\">App\\Exceptions\\Handler<\/a>"],[0,4,"<a href=\"Http\/BaseResponse.php.html#13\">App\\Http\\BaseResponse<\/a>"],[0,4,"<a href=\"Http\/Controllers\/Api\/AuthController.php.html#19\">App\\Http\\Controllers\\Api\\AuthController<\/a>"],[100,2,"<a href=\"Http\/Controllers\/Api\/MovieController.php.html#17\">App\\Http\\Controllers\\Api\\MovieController<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Api\/UserController.php.html#17\">App\\Http\\Controllers\\Api\\UserController<\/a>"],[100,1,"<a href=\"Http\/Controllers\/Controller.php.html#16\">App\\Http\\Controllers\\Controller<\/a>"],[100,0,"<a href=\"Http\/Kernel.php.html#44\">App\\Http\\Kernel<\/a>"],[0,2,"<a href=\"Http\/Middleware\/Authenticate.php.html#13\">App\\Http\\Middleware\\Authenticate<\/a>"],[100,0,"<a href=\"Http\/Middleware\/EncryptCookies.php.html#14\">App\\Http\\Middleware\\EncryptCookies<\/a>"],[100,0,"<a href=\"Http\/Middleware\/PreventRequestsDuringMaintenance.php.html#14\">App\\Http\\Middleware\\PreventRequestsDuringMaintenance<\/a>"],[0,4,"<a href=\"Http\/Middleware\/RedirectIfAuthenticated.php.html#15\">App\\Http\\Middleware\\RedirectIfAuthenticated<\/a>"],[100,0,"<a href=\"Http\/Middleware\/TrimStrings.php.html#14\">App\\Http\\Middleware\\TrimStrings<\/a>"],[0,1,"<a href=\"Http\/Middleware\/TrustHosts.php.html#12\">App\\Http\\Middleware\\TrustHosts<\/a>"],[100,0,"<a href=\"Http\/Middleware\/TrustProxies.php.html#15\">App\\Http\\Middleware\\TrustProxies<\/a>"],[100,0,"<a href=\"Http\/Middleware\/VerifyCsrfToken.php.html#14\">App\\Http\\Middleware\\VerifyCsrfToken<\/a>"],[100,3,"<a href=\"Http\/Request.php.html#13\">App\\Http\\Request<\/a>"],[100,4,"<a href=\"Http\/Requests\/ApiRequest.php.html#12\">App\\Http\\Requests\\ApiRequest<\/a>"],[0,1,"<a href=\"Http\/Requests\/RegisterUserRequest.php.html#16\">App\\Http\\Requests\\RegisterUserRequest<\/a>"],[0,1,"<a href=\"Http\/Requests\/UserLoginRequest.php.html#15\">App\\Http\\Requests\\UserLoginRequest<\/a>"],[100,1,"<a href=\"Http\/Resources\/ActorResource.php.html#19\">App\\Http\\Resources\\ActorResource<\/a>"],[100,1,"<a href=\"Http\/Resources\/MovieCollection.php.html#14\">App\\Http\\Resources\\MovieCollection<\/a>"],[100,1,"<a href=\"Http\/Resources\/MovieResource.php.html#21\">App\\Http\\Resources\\MovieResource<\/a>"],[0,1,"<a href=\"Http\/Resources\/UserResource.php.html#15\">App\\Http\\Resources\\UserResource<\/a>"],[100,1,"<a href=\"Models\/Actor.php.html#30\">App\\Models\\Actor<\/a>"],[100,1,"<a href=\"Models\/Movie.php.html#37\">App\\Models\\Movie<\/a>"],[100,0,"<a href=\"Models\/User.php.html#29\">App\\Models\\User<\/a>"],[33.33333333333333,3,"<a href=\"Providers\/AppServiceProvider.php.html#12\">App\\Providers\\AppServiceProvider<\/a>"],[100,1,"<a href=\"Providers\/AuthServiceProvider.php.html#14\">App\\Providers\\AuthServiceProvider<\/a>"],[0,1,"<a href=\"Providers\/BroadcastServiceProvider.php.html#13\">App\\Providers\\BroadcastServiceProvider<\/a>"],[100,1,"<a href=\"Providers\/EventServiceProvider.php.html#16\">App\\Providers\\EventServiceProvider<\/a>"],[100,1,"<a href=\"Providers\/RepositoryServiceProvider.php.html#16\">App\\Providers\\RepositoryServiceProvider<\/a>"],[100,2,"<a href=\"Providers\/RouteServiceProvider.php.html#14\">App\\Providers\\RouteServiceProvider<\/a>"],[100,1,"<a href=\"Providers\/ServicesServiceProvider.php.html#16\">App\\Providers\\ServicesServiceProvider<\/a>"],[0,8,"<a href=\"Providers\/TelescopeServiceProvider.php.html#11\">App\\Providers\\TelescopeServiceProvider<\/a>"],[100,2,"<a href=\"Repositories\/ActorRepository.php.html#16\">App\\Repositories\\ActorRepository<\/a>"],[100,6,"<a href=\"Repositories\/MovieRepository.php.html#20\">App\\Repositories\\MovieRepository<\/a>"],[97.14285714285714,15,"<a href=\"Services\/MovieService.php.html#26\">App\\Services\\MovieService<\/a>"],[100,1,"<a href=\"Transformers\/ActorTransformer.php.html#5\">App\\Transformers\\ActorTransformer<\/a>"],[100,1,"<a href=\"Transformers\/MovieTransformer.php.html#5\">App\\Transformers\\MovieTransformer<\/a>"],[100,4,"<a href=\"Traits\/ModelUuid.php.html#7\">App\\Traits\\ModelUuid<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"Console\/Kernel.php.html#32\">App\\Console\\Kernel::schedule<\/a>"],[100,1,"<a href=\"Console\/Kernel.php.html#43\">App\\Console\\Kernel::commands<\/a>"],[100,1,"<a href=\"Exceptions\/Handler.php.html#55\">App\\Exceptions\\Handler::register<\/a>"],[0,1,"<a href=\"Exceptions\/Handler.php.html#68\">App\\Exceptions\\Handler::render<\/a>"],[0,2,"<a href=\"Exceptions\/Handler.php.html#80\">App\\Exceptions\\Handler::jsonResponse<\/a>"],[0,9,"<a href=\"Exceptions\/Handler.php.html#98\">App\\Exceptions\\Handler::handleException<\/a>"],[0,3,"<a href=\"Http\/BaseResponse.php.html#24\">App\\Http\\BaseResponse::respond<\/a>"],[0,1,"<a href=\"Http\/BaseResponse.php.html#42\">App\\Http\\BaseResponse::unauthorised<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Api\/AuthController.php.html#28\">App\\Http\\Controllers\\Api\\AuthController::register<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Api\/AuthController.php.html#49\">App\\Http\\Controllers\\Api\\AuthController::login<\/a>"],[100,1,"<a href=\"Http\/Controllers\/Api\/MovieController.php.html#27\">App\\Http\\Controllers\\Api\\MovieController::__construct<\/a>"],[100,1,"<a href=\"Http\/Controllers\/Api\/MovieController.php.html#39\">App\\Http\\Controllers\\Api\\MovieController::index<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Api\/UserController.php.html#26\">App\\Http\\Controllers\\Api\\UserController::me<\/a>"],[100,1,"<a href=\"Http\/Controllers\/Controller.php.html#32\">App\\Http\\Controllers\\Controller::__construct<\/a>"],[0,2,"<a href=\"Http\/Middleware\/Authenticate.php.html#22\">App\\Http\\Middleware\\Authenticate::redirectTo<\/a>"],[0,4,"<a href=\"Http\/Middleware\/RedirectIfAuthenticated.php.html#26\">App\\Http\\Middleware\\RedirectIfAuthenticated::handle<\/a>"],[0,1,"<a href=\"Http\/Middleware\/TrustHosts.php.html#19\">App\\Http\\Middleware\\TrustHosts::hosts<\/a>"],[100,1,"<a href=\"Http\/Request.php.html#20\">App\\Http\\Request::wantsJson<\/a>"],[100,1,"<a href=\"Http\/Request.php.html#30\">App\\Http\\Request::expectsJson<\/a>"],[100,1,"<a href=\"Http\/Request.php.html#40\">App\\Http\\Request::authorize<\/a>"],[100,1,"<a href=\"Http\/Requests\/ApiRequest.php.html#19\">App\\Http\\Requests\\ApiRequest::authorize<\/a>"],[100,1,"<a href=\"Http\/Requests\/ApiRequest.php.html#29\">App\\Http\\Requests\\ApiRequest::rules<\/a>"],[100,2,"<a href=\"Http\/Requests\/ApiRequest.php.html#43\">App\\Http\\Requests\\ApiRequest::all<\/a>"],[0,1,"<a href=\"Http\/Requests\/RegisterUserRequest.php.html#18\">App\\Http\\Requests\\RegisterUserRequest::rules<\/a>"],[0,1,"<a href=\"Http\/Requests\/UserLoginRequest.php.html#17\">App\\Http\\Requests\\UserLoginRequest::rules<\/a>"],[100,1,"<a href=\"Http\/Resources\/ActorResource.php.html#27\">App\\Http\\Resources\\ActorResource::toArray<\/a>"],[100,1,"<a href=\"Http\/Resources\/MovieCollection.php.html#22\">App\\Http\\Resources\\MovieCollection::toArray<\/a>"],[100,1,"<a href=\"Http\/Resources\/MovieResource.php.html#29\">App\\Http\\Resources\\MovieResource::toArray<\/a>"],[0,1,"<a href=\"Http\/Resources\/UserResource.php.html#22\">App\\Http\\Resources\\UserResource::toArray<\/a>"],[100,1,"<a href=\"Models\/Actor.php.html#52\">App\\Models\\Actor::movies<\/a>"],[100,1,"<a href=\"Models\/Movie.php.html#61\">App\\Models\\Movie::actors<\/a>"],[33.33333333333333,2,"<a href=\"Providers\/AppServiceProvider.php.html#19\">App\\Providers\\AppServiceProvider::register<\/a>"],[100,1,"<a href=\"Providers\/AppServiceProvider.php.html#32\">App\\Providers\\AppServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/AuthServiceProvider.php.html#30\">App\\Providers\\AuthServiceProvider::boot<\/a>"],[0,1,"<a href=\"Providers\/BroadcastServiceProvider.php.html#20\">App\\Providers\\BroadcastServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/EventServiceProvider.php.html#34\">App\\Providers\\EventServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/RepositoryServiceProvider.php.html#23\">App\\Providers\\RepositoryServiceProvider::register<\/a>"],[100,1,"<a href=\"Providers\/RouteServiceProvider.php.html#39\">App\\Providers\\RouteServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/RouteServiceProvider.php.html#58\">App\\Providers\\RouteServiceProvider::configureRateLimiting<\/a>"],[100,1,"<a href=\"Providers\/ServicesServiceProvider.php.html#23\">App\\Providers\\ServicesServiceProvider::register<\/a>"],[0,6,"<a href=\"Providers\/TelescopeServiceProvider.php.html#18\">App\\Providers\\TelescopeServiceProvider::register<\/a>"],[0,2,"<a href=\"Providers\/TelescopeServiceProvider.php.html#43\">App\\Providers\\TelescopeServiceProvider::hideSensitiveRequestDetails<\/a>"],[100,1,"<a href=\"Repositories\/ActorRepository.php.html#26\">App\\Repositories\\ActorRepository::__construct<\/a>"],[100,1,"<a href=\"Repositories\/ActorRepository.php.html#37\">App\\Repositories\\ActorRepository::save<\/a>"],[100,1,"<a href=\"Repositories\/MovieRepository.php.html#27\">App\\Repositories\\MovieRepository::__construct<\/a>"],[100,4,"<a href=\"Repositories\/MovieRepository.php.html#35\">App\\Repositories\\MovieRepository::find<\/a>"],[100,1,"<a href=\"Repositories\/MovieRepository.php.html#62\">App\\Repositories\\MovieRepository::save<\/a>"],[100,1,"<a href=\"Services\/MovieService.php.html#47\">App\\Services\\MovieService::__construct<\/a>"],[100,4,"<a href=\"Services\/MovieService.php.html#60\">App\\Services\\MovieService::find<\/a>"],[100,5,"<a href=\"Services\/MovieService.php.html#89\">App\\Services\\MovieService::getApiBackup<\/a>"],[100,3,"<a href=\"Services\/MovieService.php.html#117\">App\\Services\\MovieService::getQuerystring<\/a>"],[80,2,"<a href=\"Services\/MovieService.php.html#139\">App\\Services\\MovieService::decodeJson<\/a>"],[100,1,"<a href=\"Transformers\/ActorTransformer.php.html#11\">App\\Transformers\\ActorTransformer::transform<\/a>"],[100,1,"<a href=\"Transformers\/MovieTransformer.php.html#11\">App\\Transformers\\MovieTransformer::transform<\/a>"],[100,2,"<a href=\"Traits\/ModelUuid.php.html#13\">App\\Traits\\ModelUuid::boot<\/a>"],[100,1,"<a href=\"Traits\/ModelUuid.php.html#30\">App\\Traits\\ModelUuid::getIncrementing<\/a>"],[100,1,"<a href=\"Traits\/ModelUuid.php.html#39\">App\\Traits\\ModelUuid::getKeyType<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
